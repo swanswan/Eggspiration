@@ -1,0 +1,22 @@
+package litvin10;
+
+import java.util.Scanner;
+
+public class Eggspiration {
+	//45 days after julian date
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Enter Julian date on egg carton: ");
+		Scanner keyboard = new Scanner(System.in);
+		int date = keyboard.nextInt();
+		int eggspirationDate = date+45;
+		if (eggspirationDate<100){
+			System.out.println("Eggspiration date is 0" + eggspirationDate);
+		}
+		else
+		System.out.println("Eggspiration date is " + eggspirationDate);
+
+	}
+
+}
